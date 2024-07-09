@@ -115,9 +115,23 @@ final class Service_Tests: XCTestCase {
             expectation.fulfill()
         }
         waitForExpectations(timeout: 3, handler: nil)
-        
     }
     
+    
+    //mide rendimiento de la funcion
+    func testFetchPerformanceUser() {
+        let viewModel = UsersViewModel(service: Service())
+        self.measure {
+            let expectation = self.expectation(description: "Fetch news performance")
+            viewModel.fetchAllUsers()
+            
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                expectation.fulfill()
+            }
+            
+            waitForExpectations(timeout: 3, handler: nil)
+        }
+    }
     
     
 }
