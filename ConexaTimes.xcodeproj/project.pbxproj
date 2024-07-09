@@ -87,13 +87,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		510B90EA2C3C9781005EFAF3 /* UnitTesting */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = UnitTesting;
-			sourceTree = "<group>";
-		};
 		510B90F02C3C9A20005EFAF3 /* ConexaTimes_Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -132,7 +125,6 @@
 		51459FAE2C39C5650062F7FF /* ConexaTimes */ = {
 			isa = PBXGroup;
 			children = (
-				510B90EA2C3C9781005EFAF3 /* UnitTesting */,
 				51459FE92C3A3F620062F7FF /* Info.plist */,
 				51459FC82C39C6920062F7FF /* Service */,
 				51459FBF2C39C5CE0062F7FF /* App */,
