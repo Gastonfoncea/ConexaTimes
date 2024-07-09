@@ -4,8 +4,7 @@
 y la evolucion.
 
 -La App Pose 2 modulos importanes el modulo "Home" donde se manejara toda la logica y la UI de las noticas, y el modulo User, en este modulo se manejan los usuarios y tambien 
-accedera a la ubicacion de los mismos
--En cuanto al unit Testing la arquitectura MVVM facilita la creación de pruebas unitarias sin necesidad de interactuar con la interfaz de usuario.
+accedera a la ubicacion de los mismos. En cuanto al unit Testing la arquitectura MVVM facilita la creación de pruebas unitarias sin necesidad de interactuar con la interfaz de usuario.
 
 UI: La parte visual de la app fue desarrollada con el framework SwiftUI, permite construir aplicaciones complejas con menos codigo
 
