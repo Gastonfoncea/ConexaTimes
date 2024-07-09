@@ -69,6 +69,20 @@ final class Service_Tests: XCTestCase {
     }
     
     
+    //mide rendimiento de la funcion
+    func testFetchPerformance() {
+        self.measure {
+            let expectation = self.expectation(description: "Fetch news performance")
+            homeViewModel.fetchAllNews()
+            
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                expectation.fulfill()
+            }
+            
+            waitForExpectations(timeout: 3, handler: nil)
+        }
+    }
+    
     //MARK: UserViewModel -
     func testFetchUsersSucces() {
         let succesService = MockServiceSucces()

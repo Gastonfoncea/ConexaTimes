@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		510B90F22C3C9A20005EFAF3 /* ConexaTimes_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510B90F12C3C9A20005EFAF3 /* ConexaTimes_Tests.swift */; };
 		510B90F92C3C9B04005EFAF3 /* Service_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510B90F82C3C9B04005EFAF3 /* Service_Tests.swift */; };
 		510B90FD2C3CA048005EFAF3 /* MockServiceFailure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510B90FC2C3CA048005EFAF3 /* MockServiceFailure.swift */; };
 		510B91012C3CB0C3005EFAF3 /* ProtocolService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510B91002C3CB0C3005EFAF3 /* ProtocolService.swift */; };
@@ -44,7 +43,6 @@
 
 /* Begin PBXFileReference section */
 		510B90EF2C3C9A20005EFAF3 /* ConexaTimes_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConexaTimes_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		510B90F12C3C9A20005EFAF3 /* ConexaTimes_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConexaTimes_Tests.swift; sourceTree = "<group>"; };
 		510B90F82C3C9B04005EFAF3 /* Service_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service_Tests.swift; sourceTree = "<group>"; };
 		510B90FC2C3CA048005EFAF3 /* MockServiceFailure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockServiceFailure.swift; sourceTree = "<group>"; };
 		510B91002C3CB0C3005EFAF3 /* ProtocolService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolService.swift; sourceTree = "<group>"; };
@@ -100,7 +98,6 @@
 			isa = PBXGroup;
 			children = (
 				510B90F82C3C9B04005EFAF3 /* Service_Tests.swift */,
-				510B90F12C3C9A20005EFAF3 /* ConexaTimes_Tests.swift */,
 			);
 			path = ConexaTimes_Tests;
 			sourceTree = "<group>";
@@ -381,7 +378,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				510B90F22C3C9A20005EFAF3 /* ConexaTimes_Tests.swift in Sources */,
 				510B90F92C3C9B04005EFAF3 /* Service_Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
