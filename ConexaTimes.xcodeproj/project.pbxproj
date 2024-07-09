@@ -27,7 +27,6 @@
 		51459FDD2C39FED10062F7FF /* UsersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51459FDC2C39FED10062F7FF /* UsersViewModel.swift */; };
 		51459FDF2C3A00680062F7FF /* LoadingCar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51459FDE2C3A00680062F7FF /* LoadingCar.swift */; };
 		51459FE12C3A01AF0062F7FF /* ImageLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51459FE02C3A01AE0062F7FF /* ImageLoading.swift */; };
-		51459FE32C3A046F0062F7FF /* DetailNewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51459FE22C3A046F0062F7FF /* DetailNewViewModel.swift */; };
 		51459FE52C3A09730062F7FF /* UsersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51459FE42C3A09730062F7FF /* UsersModel.swift */; };
 		51459FE82C3A34A90062F7FF /* UserCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51459FE72C3A34A90062F7FF /* UserCard.swift */; };
 		51459FEB2C3A42200062F7FF /* ButtonGoogleMaps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51459FEA2C3A42200062F7FF /* ButtonGoogleMaps.swift */; };
@@ -66,7 +65,6 @@
 		51459FDC2C39FED10062F7FF /* UsersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewModel.swift; sourceTree = "<group>"; };
 		51459FDE2C3A00680062F7FF /* LoadingCar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingCar.swift; sourceTree = "<group>"; };
 		51459FE02C3A01AE0062F7FF /* ImageLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoading.swift; sourceTree = "<group>"; };
-		51459FE22C3A046F0062F7FF /* DetailNewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailNewViewModel.swift; sourceTree = "<group>"; };
 		51459FE42C3A09730062F7FF /* UsersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersModel.swift; sourceTree = "<group>"; };
 		51459FE72C3A34A90062F7FF /* UserCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCard.swift; sourceTree = "<group>"; };
 		51459FE92C3A3F620062F7FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -216,7 +214,6 @@
 			isa = PBXGroup;
 			children = (
 				51459FCF2C39D3540062F7FF /* HomeViewModel.swift */,
-				51459FE22C3A046F0062F7FF /* DetailNewViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -405,7 +402,6 @@
 				51459FD92C39FD650062F7FF /* UsersView.swift in Sources */,
 				510B91042C3CB6F7005EFAF3 /* MockServiceSucces.swift in Sources */,
 				51459FE52C3A09730062F7FF /* UsersModel.swift in Sources */,
-				51459FE32C3A046F0062F7FF /* DetailNewViewModel.swift in Sources */,
 				510B90FD2C3CA048005EFAF3 /* MockServiceFailure.swift in Sources */,
 				51459FCE2C39CA390062F7FF /* ErrorService.swift in Sources */,
 				51459FB22C39C5650062F7FF /* HomeView.swift in Sources */,

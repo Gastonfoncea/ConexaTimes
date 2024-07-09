@@ -16,8 +16,14 @@ struct UsersView: View {
     var body: some View {
         NavigationStack {
             VStack{
-                
-                listOfUsers
+                switch viewModel.viewState {
+                case .loading:
+                    Text("Cargando")
+                case .loaded:
+                    listOfUsers
+                case .error(let error):
+                    ContentUnavailableView(error.errorDescription ?? "Error", systemImage: "network.slash")
+                }
             }
             .padding(.top,60)
            
@@ -55,16 +61,16 @@ extension UsersView {
                         Spacer()
                     }
                     List(viewModel.users) {user in
-                            Button(action: {
-                                if let lat = user.address?.geo?.lat, let lng = user.address?.geo?.lng {
-                                    viewModel.openGoogleMaps(lat: lat, lng: lng)
-                                } else {
-                                    alertMessage = "Ubicación no disponible para el usuario \(user.firstname ?? "") \(user.lastname ?? "")"
-                                    showingAlert = true
-                                }
-                            }) {
-                                UserCard(firstName: user.firstname ?? "", lastName: user.lastname ?? "", city: user.address?.city ?? "", street: user.address?.street ?? "")
+                        Button(action: {
+                            if let lat = user.address?.geo?.lat, let lng = user.address?.geo?.lng {
+                                viewModel.openGoogleMaps(lat: lat, lng: lng)
+                            } else {
+                                alertMessage = "Ubicación no disponible para el usuario \(user.firstname ?? "") \(user.lastname ?? "")"
+                                showingAlert = true
                             }
+                        }) {
+                            UserCard(firstName: user.firstname ?? "", lastName: user.lastname ?? "", city: user.address?.city ?? "", street: user.address?.street ?? "")
+                        }
                         
                         .listRowSeparator(.hidden)
                     }

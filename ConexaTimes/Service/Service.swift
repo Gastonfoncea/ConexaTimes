@@ -51,8 +51,8 @@ class Service: ProtocolService {
             
             do {
                 let news = try JSONDecoder().decode([NewsModel].self, from: data)
-//                print("Funciona \(news)")
                 completion(.success(news))
+                
             } catch {
                 print(error)
                 completion(.failure(ErrorService.unknown("Error desconocido" as! Error)))

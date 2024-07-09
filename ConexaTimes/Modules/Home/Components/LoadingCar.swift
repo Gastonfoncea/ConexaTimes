@@ -23,7 +23,6 @@ struct LoadingCar: View {
                 
                 ImageLoading(height: 400)
 
-
             }
             .padding(.horizontal,20)
                   .onAppear{
@@ -35,7 +34,7 @@ struct LoadingCar: View {
         }
         .frame(height: 620)
         .padding(.horizontal)
-        .padding(.top,120)
+        .padding(.top,140)
 
 
     }

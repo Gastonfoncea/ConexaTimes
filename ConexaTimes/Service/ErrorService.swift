@@ -21,7 +21,7 @@ enum ErrorService: Error, LocalizedError {
             return "La Url proporcionada no es valida"
             
         case .serverError:
-            return "El servidor no estaria funcionando"
+            return "El servidor no esta funcionando"
             
         case .invalidData:
             return "Los datos proporcionados no funcionan, proba de vuelta mas tarde"

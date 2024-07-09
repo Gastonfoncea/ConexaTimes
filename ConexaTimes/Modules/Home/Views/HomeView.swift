@@ -15,17 +15,16 @@ struct HomeView: View {
     var body: some View {
         NavigationStack {
             VStack {
-                if viewModel.error != nil {
-                    ContentUnavailableView("error en la red", systemImage: "network.slash")
-                    
-                } else if viewModel.arrayNews.isEmpty {
+                switch viewModel.state {
+                case .loading:
                     LoadingCar()
                     
-                } else {
-                    VStack {
-                        Header
-                        ListNews
-                    }
+                case .loaded:
+                    Header
+                    ListNews
+                    
+                case .error(let error):
+                    ContentUnavailableView(error.errorDescription ?? "Error", systemImage: "network.slash")
                 }
             }
             .searchable(text: self.$search,prompt: "Busca tu Noticia")

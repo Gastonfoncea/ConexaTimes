@@ -7,11 +7,19 @@
 
 import Foundation
 
+
+enum ViewState {
+    case loading
+    case loaded
+    case error(ErrorService)
+}
+
+
 class HomeViewModel: ObservableObject {
     
     let service: ProtocolService
+    @Published var state: ViewState = .loading
     @Published var arrayNews: [NewsModel] = []
-    @Published var filteredNews: [NewsModel] = []
     @Published var error: ErrorService?
     
     
@@ -25,29 +33,15 @@ class HomeViewModel: ObservableObject {
                 switch result {
                 case .success(let data):
                     self.arrayNews = data
+                    self.state = .loaded
                   //  print(self.arrayNews)
                 case .failure(let error):
                     self.error = error
+                    self.state = .error(error)
                 }
             }
         }
     }
-    
-    
-    
-    func filterNews(query: String) {
-           if query.isEmpty {
-               filteredNews = arrayNews
-           } else {
-               filteredNews = arrayNews.filter { news in
-                   news.title.localizedCaseInsensitiveContains(query) ||
-                   news.content.localizedCaseInsensitiveContains(query)
-               }
-           }
-       }
-    
-    
-    
     
     
 }
