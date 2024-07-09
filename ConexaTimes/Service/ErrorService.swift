@@ -18,13 +18,13 @@ enum ErrorService: Error, LocalizedError {
     var errorDescription: String? {
         switch self {
         case .invalidURL:
-            return "La Url proporcionada no es valida"
+            return "The Url provided is not valid"
             
         case .serverError:
-            return "El servidor no esta funcionando"
+            return "The server is not working"
             
         case .invalidData:
-            return "Los datos proporcionados no funcionan, proba de vuelta mas tarde"
+            return "The data provided does not work, try again later."
             
         case .invalidResponse:
             return "Invalid response from the server, please try again"

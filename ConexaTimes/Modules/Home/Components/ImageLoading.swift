@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ImageLoading: View {
+    
     var height:CGFloat
     @State var show = false
     var center = (UIScreen.main.bounds.width / 2) + 110
@@ -48,5 +49,5 @@ struct ImageLoading: View {
 }
 
 #Preview {
-    ImageLoading(height: 400)
+    ImageLoading(height: 75)
 }

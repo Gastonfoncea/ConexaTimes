@@ -15,7 +15,7 @@ class Service: ProtocolService {
     
     func fetchNews(completion: @escaping(Result<[NewsModel],ErrorService>) ->Void ) {
         guard let url = URL(string: baseUrlPosts) else {
-            print("url NO valida")
+            print("url is NOT valid")
             completion(.failure(ErrorService.invalidURL))
             return
         }
@@ -31,20 +31,20 @@ class Service: ProtocolService {
             }
             
             guard let response = response as? HTTPURLResponse else {
-                print("respuesta no valida")
+                print("Invalid response")
                 completion(.failure(.invalidResponse))
                 return
             }
             
             guard (200...299).contains(response.statusCode) else {
-                print("Error en la respuesta: \(response.statusCode)")
+                print("Invalid response: \(response.statusCode)")
                 completion(.failure(.invalidResponse))
                 return
             }
             
             
             guard let data = data else {
-                print("datos no validos")
+                print("Invalid Data")
                 completion(.failure(ErrorService.invalidData))
                 return
             }
@@ -55,7 +55,7 @@ class Service: ProtocolService {
                 
             } catch {
                 print(error)
-                completion(.failure(ErrorService.unknown("Error desconocido" as! Error)))
+                completion(.failure(ErrorService.unknown("Unknow Error" as! Error)))
             }
         }
         task.resume()
@@ -65,7 +65,7 @@ class Service: ProtocolService {
     func fetchUsers(completion: @escaping(Result<[UsersModel],ErrorService>) ->Void) {
         
         guard let url = URL(string: baseUrlusers) else {
-            print("url NO valida")
+            print("url is NOT valid")
             completion(.failure(ErrorService.invalidURL))
             return
         }
@@ -81,20 +81,20 @@ class Service: ProtocolService {
             }
             
             guard let response = response as? HTTPURLResponse else {
-                print("respuesta no valida")
+                print("Invalid Response")
                 completion(.failure(.invalidResponse))
                 return
             }
             
             guard (200...299).contains(response.statusCode) else {
-                print("Error en la respuesta: \(response.statusCode)")
+                print("Invalid Response: \(response.statusCode)")
                 completion(.failure(.invalidResponse))
                 return
             }
             
             
             guard let data = data else {
-                print("Datos de usuario no validos")
+                print("Invalid user data")
                 completion(.failure(ErrorService.invalidData))
                 return
             }
@@ -102,7 +102,7 @@ class Service: ProtocolService {
             
             do {
                 let users = try JSONDecoder().decode([UsersModel].self, from: data)
-                print("el fetch de usuarios funciona")
+              //  print("el fetch de usuarios funciona")
                 completion(.success(users))
             } catch {
                 print(error)

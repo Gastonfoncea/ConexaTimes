@@ -18,7 +18,8 @@ struct UsersView: View {
             VStack{
                 switch viewModel.viewState {
                 case .loading:
-                    Text("Cargando")
+                    loadingCardUsers
+                    
                 case .loaded:
                     listOfUsers
                 case .error(let error):
@@ -80,4 +81,19 @@ extension UsersView {
             }
         }
     }
+}
+
+extension UsersView {
+    
+    var loadingCardUsers: some View {
+        VStack{
+            List(1...10,id: \.self) {_ in
+            ImageLoading(height: 75)
+            }
+            .listStyle(.plain)
+        }
+    }
+    
+    
+    
 }

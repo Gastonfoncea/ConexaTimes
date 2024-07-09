@@ -59,5 +59,5 @@ struct NewsCard: View {
     
 }
 #Preview {
-    NewsCard(title: "Noticia asdasdasdasd asd asd asd asdasdasd adasdasd adasda adasd", texto: "tenxto", image:URL(string: "picsum.photos/400/300")! , fecha: "04-05-24")
+    NewsCard(title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit", texto: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.", image:URL(string: "picsum.photos/400/300")! , fecha: "04-05-24")
 }
