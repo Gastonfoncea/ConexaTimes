@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Service {
+class Service: ProtocolService {
     
     static let shared = Service()
     let baseUrlPosts = "https://jsonplaceholder.org/posts"

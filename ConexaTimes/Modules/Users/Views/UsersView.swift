@@ -38,8 +38,9 @@ extension UsersView {
     
     private var listOfUsers: some View {
         VStack{
-            if  viewModel.error != nil {
-                Text("error en algun lado")
+            if viewModel.error != nil {
+                
+                ContentUnavailableView("error en la red", systemImage: "network.slash")
                 
             } else if viewModel.users.isEmpty {
                 Text("No hay usuarios")

@@ -7,8 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		510B90F22C3C9A20005EFAF3 /* ConexaTimes_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510B90F12C3C9A20005EFAF3 /* ConexaTimes_Tests.swift */; };
+		510B90F92C3C9B04005EFAF3 /* Service_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510B90F82C3C9B04005EFAF3 /* Service_Tests.swift */; };
+		510B90FD2C3CA048005EFAF3 /* MockServiceFailure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510B90FC2C3CA048005EFAF3 /* MockServiceFailure.swift */; };
+		510B91012C3CB0C3005EFAF3 /* ProtocolService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510B91002C3CB0C3005EFAF3 /* ProtocolService.swift */; };
+		510B91042C3CB6F7005EFAF3 /* MockServiceSucces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510B91032C3CB6F7005EFAF3 /* MockServiceSucces.swift */; };
 		51459FB02C39C5650062F7FF /* ConexaTimesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51459FAF2C39C5650062F7FF /* ConexaTimesApp.swift */; };
-		51459FB22C39C5650062F7FF /* ConexaNewsHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51459FB12C39C5650062F7FF /* ConexaNewsHome.swift */; };
+		51459FB22C39C5650062F7FF /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51459FB12C39C5650062F7FF /* HomeView.swift */; };
 		51459FB42C39C5670062F7FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51459FB32C39C5670062F7FF /* Assets.xcassets */; };
 		51459FB72C39C5670062F7FF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51459FB62C39C5670062F7FF /* Preview Assets.xcassets */; };
 		51459FCA2C39C7F70062F7FF /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51459FC92C39C7F70062F7FF /* Service.swift */; };
@@ -28,10 +33,26 @@
 		51459FEB2C3A42200062F7FF /* ButtonGoogleMaps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51459FEA2C3A42200062F7FF /* ButtonGoogleMaps.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		510B90F32C3C9A20005EFAF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 51459FA42C39C5650062F7FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 51459FAB2C39C5650062F7FF;
+			remoteInfo = ConexaTimes;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		510B90EF2C3C9A20005EFAF3 /* ConexaTimes_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConexaTimes_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		510B90F12C3C9A20005EFAF3 /* ConexaTimes_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConexaTimes_Tests.swift; sourceTree = "<group>"; };
+		510B90F82C3C9B04005EFAF3 /* Service_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service_Tests.swift; sourceTree = "<group>"; };
+		510B90FC2C3CA048005EFAF3 /* MockServiceFailure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockServiceFailure.swift; sourceTree = "<group>"; };
+		510B91002C3CB0C3005EFAF3 /* ProtocolService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolService.swift; sourceTree = "<group>"; };
+		510B91032C3CB6F7005EFAF3 /* MockServiceSucces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockServiceSucces.swift; sourceTree = "<group>"; };
 		51459FAC2C39C5650062F7FF /* ConexaTimes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConexaTimes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51459FAF2C39C5650062F7FF /* ConexaTimesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConexaTimesApp.swift; sourceTree = "<group>"; };
-		51459FB12C39C5650062F7FF /* ConexaNewsHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConexaNewsHome.swift; sourceTree = "<group>"; };
+		51459FB12C39C5650062F7FF /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		51459FB32C39C5670062F7FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		51459FB62C39C5670062F7FF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		51459FC92C39C7F70062F7FF /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
@@ -53,6 +74,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		510B90EC2C3C9A20005EFAF3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		51459FA92C39C5650062F7FF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -63,10 +91,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		510B90EA2C3C9781005EFAF3 /* UnitTesting */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UnitTesting;
+			sourceTree = "<group>";
+		};
+		510B90F02C3C9A20005EFAF3 /* ConexaTimes_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				510B90F82C3C9B04005EFAF3 /* Service_Tests.swift */,
+				510B90F12C3C9A20005EFAF3 /* ConexaTimes_Tests.swift */,
+			);
+			path = ConexaTimes_Tests;
+			sourceTree = "<group>";
+		};
+		510B91022C3CB6DC005EFAF3 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				510B90FC2C3CA048005EFAF3 /* MockServiceFailure.swift */,
+				510B91032C3CB6F7005EFAF3 /* MockServiceSucces.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
 		51459FA32C39C5650062F7FF = {
 			isa = PBXGroup;
 			children = (
 				51459FAE2C39C5650062F7FF /* ConexaTimes */,
+				510B90F02C3C9A20005EFAF3 /* ConexaTimes_Tests */,
 				51459FAD2C39C5650062F7FF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -75,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				51459FAC2C39C5650062F7FF /* ConexaTimes.app */,
+				510B90EF2C3C9A20005EFAF3 /* ConexaTimes_Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -82,6 +137,7 @@
 		51459FAE2C39C5650062F7FF /* ConexaTimes */ = {
 			isa = PBXGroup;
 			children = (
+				510B90EA2C3C9781005EFAF3 /* UnitTesting */,
 				51459FE92C3A3F620062F7FF /* Info.plist */,
 				51459FC82C39C6920062F7FF /* Service */,
 				51459FBF2C39C5CE0062F7FF /* App */,
@@ -150,7 +206,7 @@
 		51459FC22C39C5F30062F7FF /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				51459FB12C39C5650062F7FF /* ConexaNewsHome.swift */,
+				51459FB12C39C5650062F7FF /* HomeView.swift */,
 				51459FD62C39F3850062F7FF /* DetailNew.swift */,
 			);
 			path = Views;
@@ -201,8 +257,10 @@
 		51459FC82C39C6920062F7FF /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				510B91002C3CB0C3005EFAF3 /* ProtocolService.swift */,
 				51459FC92C39C7F70062F7FF /* Service.swift */,
 				51459FCD2C39CA390062F7FF /* ErrorService.swift */,
+				510B91022C3CB6DC005EFAF3 /* Mock */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -229,6 +287,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		510B90EE2C3C9A20005EFAF3 /* ConexaTimes_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 510B90F52C3C9A20005EFAF3 /* Build configuration list for PBXNativeTarget "ConexaTimes_Tests" */;
+			buildPhases = (
+				510B90EB2C3C9A20005EFAF3 /* Sources */,
+				510B90EC2C3C9A20005EFAF3 /* Frameworks */,
+				510B90ED2C3C9A20005EFAF3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				510B90F42C3C9A20005EFAF3 /* PBXTargetDependency */,
+			);
+			name = ConexaTimes_Tests;
+			productName = ConexaTimes_Tests;
+			productReference = 510B90EF2C3C9A20005EFAF3 /* ConexaTimes_Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		51459FAB2C39C5650062F7FF /* ConexaTimes */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 51459FBA2C39C5670062F7FF /* Build configuration list for PBXNativeTarget "ConexaTimes" */;
@@ -256,6 +332,10 @@
 				LastSwiftUpdateCheck = 1540;
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
+					510B90EE2C3C9A20005EFAF3 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 51459FAB2C39C5650062F7FF;
+					};
 					51459FAB2C39C5650062F7FF = {
 						CreatedOnToolsVersion = 15.4;
 					};
@@ -275,11 +355,19 @@
 			projectRoot = "";
 			targets = (
 				51459FAB2C39C5650062F7FF /* ConexaTimes */,
+				510B90EE2C3C9A20005EFAF3 /* ConexaTimes_Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		510B90ED2C3C9A20005EFAF3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		51459FAA2C39C5650062F7FF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -292,6 +380,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		510B90EB2C3C9A20005EFAF3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				510B90F22C3C9A20005EFAF3 /* ConexaTimes_Tests.swift in Sources */,
+				510B90F92C3C9B04005EFAF3 /* Service_Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		51459FA82C39C5650062F7FF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -299,16 +396,19 @@
 				51459FE12C3A01AF0062F7FF /* ImageLoading.swift in Sources */,
 				51459FDD2C39FED10062F7FF /* UsersViewModel.swift in Sources */,
 				51459FE82C3A34A90062F7FF /* UserCard.swift in Sources */,
+				510B91012C3CB0C3005EFAF3 /* ProtocolService.swift in Sources */,
 				51459FD72C39F3850062F7FF /* DetailNew.swift in Sources */,
 				51459FD52C39F0E00062F7FF /* PublicFunctions.swift in Sources */,
 				51459FCC2C39C8CB0062F7FF /* NewsModel.swift in Sources */,
 				51459FD02C39D3540062F7FF /* HomeViewModel.swift in Sources */,
 				51459FD32C39EC120062F7FF /* NewsCard.swift in Sources */,
 				51459FD92C39FD650062F7FF /* UsersView.swift in Sources */,
+				510B91042C3CB6F7005EFAF3 /* MockServiceSucces.swift in Sources */,
 				51459FE52C3A09730062F7FF /* UsersModel.swift in Sources */,
 				51459FE32C3A046F0062F7FF /* DetailNewViewModel.swift in Sources */,
+				510B90FD2C3CA048005EFAF3 /* MockServiceFailure.swift in Sources */,
 				51459FCE2C39CA390062F7FF /* ErrorService.swift in Sources */,
-				51459FB22C39C5650062F7FF /* ConexaNewsHome.swift in Sources */,
+				51459FB22C39C5650062F7FF /* HomeView.swift in Sources */,
 				51459FEB2C3A42200062F7FF /* ButtonGoogleMaps.swift in Sources */,
 				51459FB02C39C5650062F7FF /* ConexaTimesApp.swift in Sources */,
 				51459FCA2C39C7F70062F7FF /* Service.swift in Sources */,
@@ -318,7 +418,51 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		510B90F42C3C9A20005EFAF3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 51459FAB2C39C5650062F7FF /* ConexaTimes */;
+			targetProxy = 510B90F32C3C9A20005EFAF3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		510B90F62C3C9A20005EFAF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HR4FTPUHQH;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gastonfoncea.ConexaTimes-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ConexaTimes.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ConexaTimes";
+			};
+			name = Debug;
+		};
+		510B90F72C3C9A20005EFAF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HR4FTPUHQH;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gastonfoncea.ConexaTimes-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ConexaTimes.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ConexaTimes";
+			};
+			name = Release;
+		};
 		51459FB82C39C5670062F7FF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -501,6 +645,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		510B90F52C3C9A20005EFAF3 /* Build configuration list for PBXNativeTarget "ConexaTimes_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				510B90F62C3C9A20005EFAF3 /* Debug */,
+				510B90F72C3C9A20005EFAF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		51459FA72C39C5650062F7FF /* Build configuration list for PBXProject "ConexaTimes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

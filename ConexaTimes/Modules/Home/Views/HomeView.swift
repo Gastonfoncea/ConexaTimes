@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ConexaNewsHome: View {
+struct HomeView: View {
     
     @StateObject var viewModel: HomeViewModel
     @State var search: String = ""
@@ -39,13 +39,13 @@ struct ConexaNewsHome: View {
 }
 
 #Preview {
-    ConexaNewsHome(viewModel: HomeViewModel(service: Service()))
+    HomeView(viewModel: HomeViewModel(service: Service()))
 }
 
 
 
 //MARK: Exensions -
-extension ConexaNewsHome {
+extension HomeView {
     
     private var Header: some View {
         VStack {

@@ -16,7 +16,7 @@ struct ConexaTimesApp: App {
         WindowGroup {
             TabView {
                 
-                ConexaNewsHome(viewModel: HomeViewModel(service: service))
+                HomeView(viewModel: HomeViewModel(service: service))
                     .tabItem{
                         Label("Noticias", systemImage: "newspaper")
                             .tint(.accentColor)

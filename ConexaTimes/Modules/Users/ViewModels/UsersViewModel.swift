@@ -10,12 +10,12 @@ import UIKit
 
 class UsersViewModel: ObservableObject {
     
-    let service: Service
+    let service: ProtocolService
     @Published var users: [UsersModel] = []
     @Published var error: ErrorService?
     
     
-    init(service: Service) {
+    init(service: ProtocolService) {
         self.service = service
     }
     

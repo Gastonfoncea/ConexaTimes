@@ -9,18 +9,18 @@ import Foundation
 
 class HomeViewModel: ObservableObject {
     
-    let service: Service
+    let service: ProtocolService
     @Published var arrayNews: [NewsModel] = []
     @Published var filteredNews: [NewsModel] = []
     @Published var error: ErrorService?
     
     
-    init(service: Service) {
+    init(service: ProtocolService) {
         self.service = service
     }
     
     func fetchAllNews() {
-        Service.shared.fetchNews { result in
+        service.fetchNews { result in
             DispatchQueue.main.async {
                 switch result {
                 case .success(let data):
